@@ -1,25 +1,26 @@
 document.getElementById('yesBtn').addEventListener('click', function() {
-    alert("You've made me the happiest person alive! ❤️");
+    // Show the thank you message
+    const thankYouMessage = document.getElementById('thankYouMessage');
+    thankYouMessage.innerHTML = "Thank You, Here are some roses for my Precious!";
+    thankYouMessage.style.display = "block"; // Show the thank you message
     showerRoses(); // Call the function to shower roses
-    sendNotification("She said YES!");
 });
 
 document.getElementById('noBtn').addEventListener('click', function() {
     let confirmResponse = confirm("Are you sure? You might change your mind!");
     if (confirmResponse) {
         alert("I'll keep trying to win your heart. 💔");
-        sendNotification("She said NO...");
     }
 });
 
 function showerRoses() {
     const roseDisplay = document.getElementById('roseDisplay');
-    const duration = 30000; // 30 seconds
+    const duration = 60000; // 60 seconds
     const endTime = Date.now() + duration;
 
     const interval = setInterval(() => {
         if (Date.now() > endTime) {
-            clearInterval(interval); // Stop creating roses after 30 seconds
+            clearInterval(interval); // Stop creating roses after 60 seconds
             return;
         }
 
@@ -44,9 +45,4 @@ function showerRoses() {
             rose.remove();
         }, 3000); // Time to remove the rose after it falls
     }, 500); // Create a new rose every 500 milliseconds (adjust as needed)
-}
-
-function sendNotification(message) {
-    // Use a service like EmailJS or Twilio to send yourself a notification
-    console.log(message); // Replace this with actual notification code
 }
