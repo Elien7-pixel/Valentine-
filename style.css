@@ -20,4 +20,52 @@ h1 {
 }
 
 p {
-    font-size
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#yesBtn {
+    background-color: #4caf50;
+    color: white;
+}
+
+#yesBtn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#noBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+#noBtn:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+}
+
+#thankYouMessage {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #4caf50; /* Green color for the thank you message */
+}
+
+#roseDisplay {
+    margin-top: 30px;
+    font-size: 2em;
+    position: relative; /* Allows absolute positioning of roses */
+}
