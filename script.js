@@ -2,6 +2,8 @@ document.getElementById('yesBtn').addEventListener('click', function() {
 
     alert("You've made me the happiest short person alive! ❤️");
 
+    showerRoses();
+
     document.getElementById('roseDisplay').innerHTML = "🌹🌹🌹 Thank you! Here are some roses for my Precious! 🌹🌹🌹";
 
     sendNotification("She said YES!");
