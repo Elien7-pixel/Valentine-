@@ -1,28 +1,17 @@
 document.getElementById('yesBtn').addEventListener('click', function() {
-
-    alert("You've made me the happiest short person alive! ❤️");
-
-    showerRoses();
-
-
+    alert("You've made me the happiest person alive! ❤️");
+    showerRoses(); // Call the function to shower roses
     sendNotification("She said YES!");
-
 });
 
 document.getElementById('noBtn').addEventListener('click', function() {
-
-    let confirmResponse = confirm("Wrong Answer 😭");
-
+    let confirmResponse = confirm("Are you sure? You might change your mind!");
     if (confirmResponse) {
-
-        alert("Try Again");
-
+        alert("I'll keep trying to win your heart. 💔");
         sendNotification("She said NO...");
-
     }
-
 });
-    
+
 function showerRoses() {
     const roseDisplay = document.getElementById('roseDisplay');
     for (let i = 0; i < 50; i++) { // Number of roses to shower
@@ -49,11 +38,7 @@ function showerRoses() {
     }
 }
 
-
 function sendNotification(message) {
-
     // Use a service like EmailJS or Twilio to send yourself a notification
-
     console.log(message); // Replace this with actual notification code
-
 }
