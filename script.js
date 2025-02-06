@@ -2,7 +2,7 @@ document.getElementById('yesBtn').addEventListener('click', function() {
 
     alert("You've made me the happiest short person alive! ❤️");
 
-    document.getElementById('roseDisplay').innerHTML = "🌹🌹🌹 Roses for my Precious! 🌹🌹🌹";
+    document.getElementById('roseDisplay').innerHTML = "🌹🌹🌹 Thank you! Here are some roses for my Precious! 🌹🌹🌹";
 
     sendNotification("She said YES!");
 
