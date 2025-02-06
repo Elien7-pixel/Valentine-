@@ -4,7 +4,6 @@ document.getElementById('yesBtn').addEventListener('click', function() {
 
     showerRoses();
 
-    document.getElementById('roseDisplay').innerHTML = "🌹🌹🌹 Thank you! Here are some roses for my Precious! 🌹🌹🌹";
 
     sendNotification("She said YES!");
 
@@ -21,6 +20,9 @@ document.getElementById('noBtn').addEventListener('click', function() {
         sendNotification("She said NO...");
 
     }
+
+});
+    
 function showerRoses() {
     const roseDisplay = document.getElementById('roseDisplay');
     for (let i = 0; i < 50; i++) { // Number of roses to shower
@@ -46,7 +48,7 @@ function showerRoses() {
         }, 3000); // Time to remove the rose after it falls
     }
 }
-});
+
 
 function sendNotification(message) {
 
